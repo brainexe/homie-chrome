@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Raspberry",
-  "description": "Raspberry Popup",
+  "name": "Homie",
+  "description": "Homie Popup",
   "version": "0.2",
 
   "browser_action": {
@@ -12,7 +12,6 @@
   "options_page": "options.html",
   "permissions": [
     "activeTab",
-    "https://raspberry.mdoetsch.de/",
     "storage"
   ]
 }

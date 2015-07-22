@@ -1,6 +1,6 @@
 
 function domLoaded() {
-    var iframe = document.getElementById('raspberry_iframe');
+    var iframe = document.getElementById('homie_iframe');
     chrome.storage.sync.get("host", function(config) {
         iframe.src = config.host;
     });
