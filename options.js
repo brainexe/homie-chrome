@@ -1,5 +1,7 @@
 
-angular.controller('OptionsController', function($scope) {
+var app = angular.module('options',[]);
+
+app.controller('OptionsController', function($scope) {
     chrome.storage.sync.get("host", function(config) {
         $scope.url = config.host;
         $scope.$apply();
@@ -7,7 +9,7 @@ angular.controller('OptionsController', function($scope) {
 
     $scope.save = function() {
         chrome.storage.sync.set({host: $scope.url}, function() {
-            alert('Saved: ' + host);
+            alert('Saved: ' + $scope.url);
         });
     }
 });
