@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                     archive: 'dist/extension.zip'
                 },
                 files: [
-                    {src: ['src/**', '*.png', '*.html', '.*js', '*json']}
+                    {src: ['src/**', '*.png', '*.html', '*.js', '*.json']}
                 ]
             }
         }
